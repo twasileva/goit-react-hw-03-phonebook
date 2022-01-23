@@ -16,10 +16,8 @@ state = {
   }
   
   componentDidMount() {
-    console.log(' Монтирование нашего компонента componenetDidMount');
     const contacts = localStorage.getItem('contacts')
     const parsedContacts = JSON.parse(contacts)
-    console.log(parsedContacts);
     if (parsedContacts) {
       this.setState({contacts:parsedContacts})
     }
